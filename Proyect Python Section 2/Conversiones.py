@@ -40,3 +40,5 @@ print(nueva_edad)
 print(type(nueva_edad))
 print("Tu nueva edad es: " + nueva_edad) #Esto es un error debido a que  no se puede concatenar un string
                                         #con un integer, porque el + no sabe si concatenar o sumar, porque son dos datos distintos
+
+
