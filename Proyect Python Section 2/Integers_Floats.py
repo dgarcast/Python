@@ -23,3 +23,5 @@ print("Tu edad es: " + edad)
 print(type(edad))
 
 #Para solucionar esto, habria que hacer una conversion de tipos.
+
+

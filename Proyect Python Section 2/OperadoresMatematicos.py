@@ -13,3 +13,5 @@ print(f"{x} raiz cuadrada {y} es igual a {x**0.5}") #raiz cuadrada
 
 
 
+
+

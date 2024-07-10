@@ -4,3 +4,4 @@
 num_entero = 45
 print(type(num_entero))
 
+

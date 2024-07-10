@@ -23,3 +23,5 @@ matricula = 45675
 print(f"El color de tu coche es {color} y su matricula es {matricula}")
 #Esta manera es mas limpia y mas comoda a la hora de leer, es legible
 
+
+

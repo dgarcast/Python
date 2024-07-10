@@ -5,3 +5,4 @@
 num_decimal = 5.6
 print(type(num_decimal))
 
+

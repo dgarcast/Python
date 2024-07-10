@@ -6,3 +6,4 @@ puntos_nuevos= 40
 puntos_totales = 200
 
 print(f"Has ganado {puntos_nuevos} puntos! \nEn total, acumulas {puntos_nuevos+puntos_totales} puntos")
+

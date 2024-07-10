@@ -23,3 +23,4 @@ respuesta = nombre + nombre2
 print(respuesta)
 
 #Tambien puedes concatenar dos variables integer donde sumas dos numeros de la misma manera que la forma de arriba
+
