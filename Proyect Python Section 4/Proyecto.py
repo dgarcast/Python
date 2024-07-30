@@ -12,29 +12,36 @@ Si no ha acertado en los 8 primero intentos, se le volvera a dar un numero aleat
 """
 print("---- BIENVENIDO AL JUEGO DEL AÑO ----")
 usuario = input("Introduzca su nombre: ")
-print(f"Hola {usuario}. Tienes que adivinar un numero del 1 al 50 y usted tendra que adivinarlo.\n Tendras 8 intentos. \n ¡¡¡ SUERTE !!!")
 
-from random import *
+print(f"Hola {usuario}. Tienes que adivinar un numero del 1 al 50.\n Tendras 8 intentos. \n ¡¡¡ SUERTE !!!")
 
-aleatorio = randint(1,51)
-print(aleatorio)
+preparado = input("¿ESTAS PREPARADO PORRA?: (S/N): ").lower()
 
-intentos = 0
+if preparado == 's':
 
-while intentos <= 8:
-    print(f"Intentos: {intentos}")
-    numeroAleatorio = int(input("¿Que numero crees que ha salido?: "))
-    if numeroAleatorio < aleatorio:
-        print("Tu numero es menor. Respuesta incorrecto")
-        intentos += 1
-    elif numeroAleatorio > aleatorio:
-        print("Tu numero es mayor. Respuesta incorrecta")
-        intentos +=1
-    elif numeroAleatorio == aleatorio:
-        print(f"Has ganado. Lo has conseguido en '{intentos}' intentos ")
-        break
+    from random import *
+
+    aleatorio = randint(1,51)
+    print(aleatorio)
+
+    intentos = 0
+
+    while intentos <= 8:
+        print(f"Intentos: {intentos}")
+        numeroAleatorio = int(input("¿Que numero crees que ha salido?: "))
+        if numeroAleatorio < aleatorio:
+            print("Respuesta incorrecta. Tu numero es menor. Intentalo de nuevo")
+            intentos += 1
+        elif numeroAleatorio > aleatorio:
+            print("Respuesta incorrecta. Tu numero es mayor. Intentalo de nuevo")
+            intentos +=1
+        elif numeroAleatorio == aleatorio:
+            print(f"Has ganado. Lo has conseguido en '{intentos}' intentos ")
+            break
+
+    else:
+        print(f"¡¡¡¡¡ HAS PERDIDO. Has agotado todo tus intentos !!!!!! El numero secreto era: {aleatorio} \n Intentalo de nuevo")
 
 else:
-    print(f"¡¡¡¡¡ HAS PERDIDO. Has agotado todo tus intentos !!!!!! El numero secreto era: {aleatorio} \n Intentalo de nuevo")
-    
-    
+    print("INTENTELO DE NUEVO!!")  
+        
